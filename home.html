@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <div class="nav-options">
+                <a href="">Home</a>
+                <div class="nav-box">
+                    <a href="">Sign in</a>  
+                </div>
+                <!-- <a href="">Sign in</a> -->
+                <div class="nav-register">
+                    <a href="">Register</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="comment">
+                <div class="ad-1">
+                    <h1>Register <br>
+                    Account</h1>
+                </div>
+                <div class="ad-2">
+                    <h5>Sign Up to create account in <a href ="">Forex .</a> </h5>
+                </div>
+            </div>
+            <div class="illustration">
+                <img src="assets/3d-image.png" alt="">
+            </div>
+                <form>
+                    <div class="form-box">
+                        <div class="form-content">
+                            <div class="form-content-box">
+                                <label>Refferral ID</label><br>
+                                <input type="text" placeholder="  TB956631" id="refid" name="refid" onClick="centerText(this)"><br>
+                                <label>Last Name</label><br>
+                                <input type="text" placeholder="  Enter Last Name" id="lname" name="lname" onClick="centerText(this)" required><br>
+                                <label> Password</label><br>
+                                <input type="password" placeholder="   Enter Password" id="password" name="password" onClick="centerText(this)" required><br>
+                                <label>Mobile Number</label><br>
+                                <input type="tel" placeholder="   Enter Mobile Number" id="mob-no" name="mob-no" onClick="centerText(this)" required><br>
+                            </div>
+                            <div class="form-content-box">
+                                <label> First Name</label><br>
+                                <input type="text" placeholder="   Enter First Name" id="fname" name="fname" onClick="centerText(this)" required><br>
+                                <label>Email</label><br>
+                                <input type="email" placeholder="   Enter Email" id="email" name="email" onClick="centerText(this)" required><br>
+                                <label>Country</label><br>
+                                <input list="countries" id="country" name="country" placeholder="  Select Your Country" onClick="centerText(this)" required>
+                                <datalist id="countries">
+                                    <option value="India">
+                                </datalist>
+                                <label>Birth Date</label><br>
+                                <input type="text" placeholder="  Select Birth Date" id="birth" name="birth" onClick="centerText(this)" required><br>
+                            </div>
+                           
+                        </div>
+                        <div class="checkbox-1">
+                            <input type="checkbox" id="check1" name="check1" value="human">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label> I'm not a robot</label>
+                            <img src="assets/check.png" alt="">
+                        </div>
+                        <div class="checkbox-2">
+                            <input type="checkbox" id="check2" name="check2" value="accepted">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label>I accept the <a href=""> TERMS & CONDITIONS </a></label>
+                        </div>
+                        <input type="submit" value="Register">
+                        <p>Already have an account ? <a href="">Log In</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="footer">
+                <p>© 2023 . Crafted with <img src="assets/love.png" alt=""> by Mewoc Technologies</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function centerText(inputElement){
+            inputElement.style.textAlign = 'center';
+        }
+    </script>
+</body>
+</html>
